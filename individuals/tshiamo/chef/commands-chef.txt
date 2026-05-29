@@ -1,0 +1,17 @@
+# Chef Exercise Commands - Tshiamo
+
+# 1. Create the recipe file
+nano nginx-recipe.rb
+
+# 2. Apply the recipe with chef-apply
+sudo chef-apply nginx-recipe.rb
+
+# 3. Verify Nginx is working
+curl http://localhost
+
+# 4. Check Nginx status
+sudo systemctl status nginx
+EOF
+
+# Capture the curl output
+curl http://localhost > webpage-output.html
