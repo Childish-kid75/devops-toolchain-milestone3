@@ -1,0 +1,5 @@
+print("=" * 50)
+print("DevOps Practical Assignment")
+print("Docker Container Running Successfully!")
+print("Executed by: Tshiamo")
+print("=" * 50)
