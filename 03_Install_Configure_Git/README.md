@@ -2,75 +2,69 @@
 
 ## Purpose
 
-Git was installed and configured on the Ubuntu server to manage the project source code. Git allows changes to be tracked, committed, and pushed to the shared GitHub repository.
+Git was installed and configured on the Ubuntu server so that I could manage the project files properly and keep track of changes made during the practical work.
 
-This section also includes the Git practical exercise where a small web project was added to the existing repository, committed, pushed, edited, committed again, and pushed again to demonstrate version control.
+Git is important in this project because the work is stored in a shared GitHub repository. Each person works on their own branch, commits their changes, and pushes the updated files back to GitHub.
 
----
+This folder includes both the Git installation/configuration work and the Git practical exercise.
 
 ## Part 1: Install & Configure Git
+### Commands Used
 
-## Commands Used
-
+```bash
 sudo apt install git -y
 git --version
 git config --global user.name "Reghardt603065"
 git config --global user.email "reghardtjvvo4o8o7@gmail.com"
 git config --global --list
+```
 
+### Explanation
+The `sudo apt install git -y` command was used to install Git on the Ubuntu server.
 
-## Explanation
+After installing Git, I used `git --version` to confirm that Git was installed successfully.
 
-The `sudo apt install git -y` command installs Git on the Ubuntu server.
+I then configured Git with my GitHub username and email address. This is important because Git uses these details to show who made each commit.
 
-The `git --version` command confirms that Git was installed successfully.
+The `git config --global --list` command was used to check that the username and email were saved correctly.
 
-The `git config --global user.name` command sets the username that appears on Git commits.
+Git was needed for this assignment because all the project work had to be added, committed, and pushed to the shared GitHub repository from my own branch.
 
-The `git config --global user.email` command sets the email address linked to the Git commits.
-
-The `git config --global --list` command displays the configured Git username and email to confirm that Git was configured correctly.
-
-Git was required for this project because the repository is hosted on GitHub, and each team member works on their own branch before pushing changes.
-
-## Evidence
-
+### Evidence
 [Git install and version](git-install-version.png)
 
 [Git config](git-config.png)
 
----
 
 ## Part 2: Git Practical Exercise
 
-## Objective
+### Objective
+The objective of this practical exercise was to show that I can use Git for version control. This included creating project files, adding them to Git, committing them, pushing them to GitHub, editing a file, and pushing the updated version again.
 
-The objective of this practical exercise was to demonstrate version control using Git. This was done by adding project files, committing them, pushing them to GitHub, editing an existing file, and pushing the updated version again.
+### What I Did
+For this practical, I used the existing shared repository instead of creating a completely new repository. I worked on the `reghardt-partb` branch, which is my own branch for this part of the project.
 
-## My Approach
+Inside the Git folder, I created a folder called `git-practical`. This folder contains two files: `index.html` and `Dockerfile`.
 
-For this practical exercise, I used the existing shared GitHub repository instead of creating a separate new repository. I worked on the `reghardt-partb` branch so that my work remained separate from the main branch.
+The `index.html` file was used as the project file that gets edited and tracked by Git. The `Dockerfile` was included because the task required adding a Docker file as part of the Git practical.
 
-Inside the Git section, I created a folder called `git-practical`. This folder contains an `index.html` file and a `Dockerfile`.
+After creating the first version of the files, I added them to Git, committed them, and pushed them to GitHub. I then edited the `index.html` file and pushed the updated version again. This shows how Git keeps a history of changes.
 
-The `index.html` file was created as a custom web page explaining the Git practical exercise. The `Dockerfile` was added to show how the HTML page could be hosted using an Nginx container.
-
-After creating the first version of the files, I added, committed, and pushed them to GitHub. I then edited the `index.html` file, created a second commit, and pushed the updated version to demonstrate how Git tracks changes over time.
-
-## Tasks Completed
+### Tasks Completed
 
 1. Used the existing shared GitHub repository.
-2. Worked on the `reghardt-partb` branch.
+2. Worked on my own branch called `reghardt-partb`.
 3. Created a folder called `git-practical`.
-4. Created an `index.html` file with original project information.
-5. Created a `Dockerfile`.
+4. Added an `index.html` file.
+5. Added a `Dockerfile`.
 6. Added, committed, and pushed the first version.
 7. Edited the `index.html` file.
 8. Added, committed, and pushed the updated version.
-9. Captured screenshots as evidence of the process.
+9. Added screenshots as proof of the process.
 
-## Commands Used
+### Commands Used
 
+```bash
 cd ~/devops-toolchain-milestone3
 
 mkdir -p 03_Install_Configure_Git/git-practical
@@ -95,16 +89,20 @@ git add 03_Install_Configure_Git/git-practical/index.html
 git commit -m "Update Git practical HTML page"
 git pull --no-rebase origin reghardt-partb
 git push origin reghardt-partb
+```
 
-## Git Practical Folder Structure
+### Git Practical Folder Structure
 
+```bash
 03_Install_Configure_Git/
 └── git-practical/
     ├── Dockerfile
     └── index.html
+```
 
-## index.html First Version
+### index.html First Version
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,10 +137,12 @@ git push origin reghardt-partb
     This is the first version of the page created by Reghardt603065.
   </p>
 </body>
-</html>`
+</html>
+```
 
-## index.html Updated Version
+### index.html Updated Version
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -186,26 +186,24 @@ git push origin reghardt-partb
   </p>
 </body>
 </html>
+```
 
-## Dockerfile Content
+### Dockerfile Content
 
-dockerfile
+```dockerfile
 FROM nginx:alpine
 
 COPY index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
+```
 
+### Reflection
+This practical helped me understand how Git is used in a real project workflow. The first push showed how new files are added to a repository. The second push showed how Git tracks updates after a file has been changed.
 
-## Explanation
+Using Git in this way makes it easier to see what was changed, when it was changed, and which version of the work is currently saved on GitHub.
 
-The Git practical exercise shows how Git is used during a real project workflow. First, the project files were created and added to the repository. The first commit saved the original version of the `index.html` file and the `Dockerfile`.
-
-After the first push, the `index.html` file was edited to create a second version. The updated file was then added, committed, and pushed again. This demonstrates how Git keeps track of changes and allows the project history to show what was added or changed over time.
-
-This task was completed on the existing shared repository using the `reghardt-partb` branch.
-
-## Git Practical Evidence
+### Git Practical Evidence
 
 [Git index first version](git-index-first-version.png)
 
