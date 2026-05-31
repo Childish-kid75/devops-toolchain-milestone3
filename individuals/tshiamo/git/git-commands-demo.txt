@@ -1,0 +1,40 @@
+# Git Exercise - Tshiamo
+# Demonstrated Git commands and workflow
+
+## 1. Initialize a new repository (simulated)
+git init git-exercise-demo
+cd git-exercise-demo
+
+## 2. Create index.html
+echo "<h1>DevOps Project</h1>" > index.html
+
+## 3. Add and commit
+git add index.html
+git commit -m "Initial commit: Add index.html"
+
+## 4. Edit and commit again
+echo "<p>Updated by Tshiamo</p>" >> index.html
+git add index.html
+git commit -m "Update: Add paragraph"
+
+## 5. View history
+git log --oneline
+
+## 6. Output of these commands (simulated):
+# 5a7f3e1 Update: Add paragraph
+# 2b9c4d8 Initial commit: Add index.html
+EOF
+
+# Also create a sample index.html for the exercise
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tshiamo's Git Exercise</title>
+</head>
+<body>
+    <h1>DevOps Toolchain Project</h1>
+    <p>Git Exercise completed by Tshiamo</p>
+    <p>This demonstrates version control with Git.</p>
+</body>
+</html>

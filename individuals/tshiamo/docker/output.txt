@@ -1,0 +1,6 @@
+==================================================
+DevOps Practical Assignment
+Docker Container Running Successfully!
+Executed by: Tshiamo
+==================================================
+tshiamo-python-app:latest                                                                             ee4d52f9098a        183MB           45MB   U    

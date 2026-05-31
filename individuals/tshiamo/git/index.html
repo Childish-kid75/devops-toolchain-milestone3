@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tshiamo's DevOps Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DevOps Toolchain Project</h1>
+        <h2>Tshiamo - Main Coordinator</h2>
+        <p>Git Exercise Completed Successfully!</p>
+        <p>Date: May 2026</p>
+        <hr>
+        <p>This page was version controlled using Git.</p>
+    </div>
+</body>
+</html>
+EOF
+
+# Initialize Git repository for this exercise
+git init
+git add index.html
+git commit -m "Initial commit: Add index.html for Git exercise"
+
+# Make a change and commit again
+echo "<!-- Last updated: $(date) -->" >> index.html
+git add index.html
+git commit -m "Update: Add timestamp comment"

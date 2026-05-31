@@ -1,0 +1,14 @@
+# Docker Exercise Commands - Tshiamo
+# All commands were successful
+
+# 1. Build the image (don't forget the . at the end!)
+docker build -t tshiamo-python-app .
+
+# 2. Run the container
+docker run tshiamo-python-app
+
+# 3. Verify image was created
+docker images | grep tshiamo-python-app
+
+# 4. See all containers (including stopped)
+docker ps -a
