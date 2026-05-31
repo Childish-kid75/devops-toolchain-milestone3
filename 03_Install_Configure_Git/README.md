@@ -29,6 +29,6 @@ Git was required for this project because the repository is hosted on GitHub, an
 
 ## Evidence
 
-[Git installation evidence](git-install.png)
+[Git install and version](git-install-version.png)
 
-[Git version and configuration evidence](git-version-config.png)
+[Git config](git-config.png)
