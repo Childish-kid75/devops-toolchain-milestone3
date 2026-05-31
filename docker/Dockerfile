@@ -1,1 +1,8 @@
-# Dockerfile will go here
+
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY app.py .
+
+CMD ["python", "app.py"]
