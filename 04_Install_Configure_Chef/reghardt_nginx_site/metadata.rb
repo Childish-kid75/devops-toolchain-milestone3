@@ -1,0 +1,7 @@
+name 'reghardt_nginx_site'
+maintainer 'Reghardt603065'
+maintainer_email 'reghardtjvvo4o8o7@gmail.com'
+license 'All Rights Reserved'
+description 'Installs Nginx and publishes a custom DevOps milestone web page'
+version '1.0.0'
+chef_version '>= 16.0'
