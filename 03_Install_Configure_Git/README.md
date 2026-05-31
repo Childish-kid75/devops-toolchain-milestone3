@@ -197,12 +197,6 @@ COPY index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
 ```
-
-### Reflection
-This practical helped me understand how Git is used in a real project workflow. The first push showed how new files are added to a repository. The second push showed how Git tracks updates after a file has been changed.
-
-Using Git in this way makes it easier to see what was changed, when it was changed, and which version of the work is currently saved on GitHub.
-
 ### Git Practical Evidence
 
 [Git index first version](git-index-first-version.png)
