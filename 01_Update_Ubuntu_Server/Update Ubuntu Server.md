@@ -12,4 +12,4 @@ sudo apt upgrade -y# Update Ubuntu Server
 
 ## Evidence
 
-![Ubuntu server update evidence](update-ubuntu-server.png)
+[Ubuntu server update evidence](update-ubuntu-server.png)
