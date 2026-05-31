@@ -2,7 +2,7 @@
 
 | Task | Assigned To | Status |
 |------|-------------|--------|
-| Ubuntu Setup | Darius | ⏳ Pending |
+| Ubuntu Setup | Darius | done |
 | Docker Setup | Ditheto | ⏳ Pending |
 | Git/GitHub | Sizakele | ⏳ Pending |
 | Chef Setup | Nthailane | ⏳ Pending |
